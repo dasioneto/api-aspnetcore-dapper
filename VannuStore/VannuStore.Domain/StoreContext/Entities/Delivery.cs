@@ -1,9 +1,10 @@
+using FluentValidator;
 using System;
 using VannuStore.Domain.StoreContext.Enums;
 
 namespace VannuStore.Domain.StoreContext.Entities
 {
-    public class Delivery
+    public class Delivery : Notifiable
     {
         public Delivery(DateTime estimatedDeliveryDate)
         {

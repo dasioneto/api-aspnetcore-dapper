@@ -1,3 +1,4 @@
+using FluentValidator;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -5,7 +6,7 @@ using VannuStore.Domain.StoreContext.ValueObjects;
 
 namespace VannuStore.Domain.StoreContext.Entities
 {
-    public class Customer
+    public class Customer : Notifiable
     {
         private readonly IList<Address> _addresses;
         public Customer(Name name, Document document, Email email, string phone)

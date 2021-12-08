@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidator;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using VannuStore.Domain.StoreContext.Enums;
 
 namespace VannuStore.Domain.StoreContext.Entities
 {
-    public class Address
+    public class Address : Notifiable
     {
         public Address(
             string street,
